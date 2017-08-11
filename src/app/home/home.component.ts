@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Show } from './show';
-import { ShowService } from './shows.service';
+import { Show } from '../show';
+import { ShowService } from '../shows.service';
 
 @Component({
-  selector: 'tvmaze-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'tvmaze-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent implements OnInit {
+export class HomeComponent implements OnInit {
   shows: Show[] = [];
 
   constructor(
